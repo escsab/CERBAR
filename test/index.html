@@ -1,0 +1,42 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="description" content="Buscador de cervezas baratas. Localiza las cervezas más baratas de tu ciudad.">
+<meta name="keywords" content="cervezas baratas,cerveza,birra,tercio,quinto,cervezas económicas,cervezas economicas, cubo de tercios, cubo de quintos, buscador, localiza, encuentra">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="./css/index.css">
+<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?libraries=places&sensor=true"></script>
+<script src="./js/libs/jquery-1.10.2.min.js"></script>
+<script src="./js/funcGeolocalitzacio.js"></script>
+<script src="./js/funcPortada.js"></script>
+<title>Cervezas Baratas - Buscador de cervezas baratas</title>
+</head>
+<body>
+	<header>
+		<div><img src="./img/imageLogo.png" alt="logo cervezas baratas"/></div>
+		<div><img src="./img/imageLogoShadow.png" alt="cervezas baratas"/></div>
+	</header>
+	<aside>
+		<a href="xxx"><img src="./img/plublica.png" alt="publica una oferta de cervezas"/></a>
+	</aside>
+	<h2>Buscador de cervezas baratas</h2>	
+	<div id="formularioBusqueda">
+		<div class="tableCell" id="containerIconRercerca"><img src="./img/iconMap.png" alt="icono bucar cervezas"/></div>
+		<div id="containerInputPoblacio" class="tableCell">
+			<input id="poblacio" type="text" placeholder="Introduce una población"/>
+			<input type="hidden" name="pais" id="pais" value="es"/>
+			<input id="longitud" type="hidden"/>
+			<input id="latitud" type="hidden"/>
+		</div>
+		
+		<div id="containerRecercaSugerida" class="oculto">
+			<div id="simulaInputRecercaSugerida">
+				<div id="recercaSugerida"></div>
+			</div>
+		</div>
+		<div id="containerBotoBuscar" class="tableCell"><input id="botoBuscar" type="submit" name="submit" value="Buscar"/></div>
+	</div>
+		
+</body>
+</html>
